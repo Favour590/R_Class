@@ -2,13 +2,13 @@ library(tidyverse)
 
 Invoice<-read.csv(file.choose())
 View(Invoice)
-  filter function
+#filter(function)
 Branches<-filter(Invoice,Branch=="Alex")
 View(Branches)
-   mutate function
+#mutate function
 rates<-mutate(Invoice,Rate=Rating*10)
 view(rates)
-      ggplot function
+#ggplot function
 ggplot(Invoice,aes(y=cogs))+geom_bar()
 ggplot(Invoce,aes(x=gross.income))+geom_freqpoly()
 ggplot(Invoice,aes(y=cogs))+geom_histogram()
